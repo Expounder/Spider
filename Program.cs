@@ -51,7 +51,7 @@ namespace Spider
 
                             CEPs cepConvert = JsonConvert.DeserializeObject<CEPs>(responseFromServer);
 
-                            var caminho1 = $@"C:\api\cep\{CEP}-{DateTime.Now.Ticks}.txt";
+                            var caminho1 = $@"C:\Api\cep\{CEP}-{DateTime.Now.Ticks}.txt";
 
                             Console.WriteLine("\n ▬▬▬▬▬▬▬▬▬▬▬ ► Resultado ◄ ▬▬▬▬▬▬▬▬▬▬▬ \n \n Rua: " + cepConvert.logradouro + "\n Bairro: " + cepConvert.bairro + "\n Localidade: " + cepConvert.localidade + "\n Estado: " + cepConvert.uf + "\n CEP: " + cepConvert.cep + "\n");
                             Console.WriteLine($@"► Os dados foram salvos como arquivo em {caminho1} ! " + "\n");
@@ -91,7 +91,7 @@ namespace Spider
 
                             CNPJs cnpjConvert = JsonConvert.DeserializeObject<CNPJs>(responseFromServer);
 
-                            var caminho2 = $@"C:\api\cnpj\{CNPJ}-{DateTime.Now.Ticks}.txt";
+                            var caminho2 = $@"\Api\Cnpj\{CNPJ}-{DateTime.Now.Ticks}.txt";
 
                             Console.WriteLine("\n ▬▬▬▬▬▬▬▬▬▬▬ ► Resultado ◄ ▬▬▬▬▬▬▬▬▬▬▬ \n \n Nome: " + cnpjConvert.nome + "\n E-mail: " + cnpjConvert.email + "\n Telefone: " + cnpjConvert.telefone + "\n Capital Social: " + cnpjConvert.capital_social + "\n Municipio: " + cnpjConvert.municipio + "\n Estado: " + cnpjConvert.uf + "\n");
                             Console.WriteLine($@"► Os dados foram salvos como arquivo em {caminho2} ! " + "\n");
